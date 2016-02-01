@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     DWORD sizeFillForHeader = 0;
     DWORD sizeFillForSection = 0;
     DWORD sectionImageSize = 0;
-	int sizeCode = 0 ;
+	int sizeCode = 0;
     DWORD wantedIAT_count = 0;
     DWORD wantedIAT_fileOffset = 0;	
     DWORD wantedIAT_sectionOffset = 0;
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
     DWORD sizeImport = 0,rvaImport = 0;
     IMAGE_DATA_DIRECTORY *pImportDirectory;
     IMAGE_SECTION_HEADER *pSectionTable;
-	DWORD (*pTable)[3];
+	DWORD(*pTable)[3];
 	char buf[9] = {0};
 	DWORD sectionRawEnd = 0;
 	long oldPos = 0;
@@ -74,10 +74,10 @@ int main(int argc, char *argv[])
 	IMAGE_SECTION_HEADER append = {0};
 	DWORD fileAlignment = 0;
 	DWORD pageAlignment = 0;
-	DWORD offsetSectionHeader = 0;   
+	DWORD offsetSectionHeader = 0;
 	DWORD imageBase = 0;
-    DWORD sectionCount = 0;
-    DWORD offsetPeHeader  = 0;
+	DWORD sectionCount = 0;
+	DWORD offsetPeHeader  = 0;
 	//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<´úÂëÕýÎÄ
     FILE *fp = fopen(argv[1],"rb");
     if(!fp)
