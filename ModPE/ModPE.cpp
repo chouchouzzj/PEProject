@@ -520,7 +520,6 @@ void __invoke__start()
     void **addrGetProcAddress = (void**)0xCCCCCCCC;
     DWORD rvaSection = 0xDDDDDDDD;
     
-	printf("22222222222222222222222222222222222222222222222222222222");
     struct strTable str =
     {
         {
